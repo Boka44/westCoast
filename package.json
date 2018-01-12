@@ -2,7 +2,7 @@
   "name": "westcoast",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://myname.github.io/myapp",
+  "homepage" : "http://boka44.github.io/westCoast",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.2.0",
