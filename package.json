@@ -2,7 +2,9 @@
   "name": "westcoast",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://myname.github.io/myapp",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-animated-weather": "^1.0.3",
     "react-dom": "^16.2.0",
