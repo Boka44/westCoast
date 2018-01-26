@@ -130,6 +130,9 @@ export class WeatherCard extends Component {
     }
 
     componentDidMount(){
+      setInterval(function() {
+        fetch('https://blooming-earth-34077.herokuapp.com/city/sanFran')
+      }, 300000);
       this.fetchData(this.props.city);
     }
 
