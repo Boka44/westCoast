@@ -130,9 +130,6 @@ export class WeatherCard extends Component {
     }
 
     componentDidMount(){
-      setInterval(function() {
-        fetch('https://blooming-earth-34077.herokuapp.com/city/sanFran')
-      }, 300000);
       this.fetchData(this.props.city);
     }
 
@@ -232,7 +229,7 @@ export class WeatherCard extends Component {
         </div>
       ) : (<div>
             <br/>
-            <p>Waiting for selection</p>
+            <p>Waking up server...</p>
             <img src={spinner} alt='loading' className="loading" />
             </div>
           )

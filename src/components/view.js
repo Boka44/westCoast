@@ -8,7 +8,8 @@ export class View extends Component {
 		this.state = {
 			city: undefined,
 			name: undefined,
-			color: undefined
+			color: undefined,
+      bool: false
 		}
 	}
 
@@ -16,17 +17,23 @@ export class View extends Component {
         this.setState({
           city,
           name,
-          color
+          color,
+          bool: true
         });
         console.log(city)
     }
 
     render() {
     	return(
+        !this.state.bool ? (
+          <div>
+          <ChooseCity onSubmit={this.onSubmit}/>
+        </div>
+          ) : (
     		<div>
 	    		<ChooseCity onSubmit={this.onSubmit}/>
 	    		<WeatherCard color={this.state.color} city={this.state.city} name={this.state.name}/>
-    		</div>
+    		</div>)
     	)
     }
 }

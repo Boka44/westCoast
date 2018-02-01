@@ -4,9 +4,9 @@
 
 html {
   background-image: url('./images/banner.png');
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
-  
+  width: 100%;
 }
 
 ::-webkit-scrollbar-track
